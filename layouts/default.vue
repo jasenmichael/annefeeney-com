@@ -39,6 +39,7 @@
           v-for="item in social"
           :key="item.name"
           :href="item.href"
+          rel="noreferrer"
           :aria-label="item.alt"
           target="_blank"
         >

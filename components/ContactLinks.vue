@@ -10,6 +10,7 @@
             dark
             fab
             :href="link.url"
+            rel="noreferrer"
             target="_blank"
           >
             <v-icon dark> {{ link.icon }} </v-icon>
