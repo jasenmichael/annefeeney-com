@@ -1,11 +1,13 @@
 <template>
-  <div class="pa-0 ma-0">
-    <v-card light class="pa-8" rounded="0">
+  <v-container>
+    <h2 class="mb-6">Back to <nuxt-link to="/blog"> Blog </nuxt-link></h2>
+
+    <v-card light class="pa-8 ma-3">
       <h1 v-html="blog.title"></h1>
       <div v-html="blog.body"></div>
-      <pre>{{ blog }}</pre>
+      <pre>{{ blog.body }}</pre>
     </v-card>
-  </div>
+  </v-container>
 </template>
 
 

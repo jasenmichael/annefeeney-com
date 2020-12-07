@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <h2>Back to <nuxt-link to="/"> Home </nuxt-link></h2>
+    <h2 class="mb-6">Go Back <nuxt-link to="/"> Home </nuxt-link></h2>
     <h1>Fellow Travelers' Advisory Blog (Archive)</h1>
     <v-card
       max-width="900"
