@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>back to <nuxt-link to="/photos"> photos </nuxt-link></h2>
+    <h2>Back to <nuxt-link to="/photos"> Photos </nuxt-link></h2>
     <v-img
       contain
       max-height="80vh"

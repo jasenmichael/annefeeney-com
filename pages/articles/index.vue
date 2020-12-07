@@ -1,7 +1,7 @@
 <template>
   <v-container>
-    <pre>{{ articles }}</pre>
-    <pre>{{ content }}</pre>
+    <!-- <pre>{{ articles }}</pre>
+    <pre>{{ content }}</pre> -->
 
     <h1>Anne Feeney in the News and Media</h1>
     <v-card

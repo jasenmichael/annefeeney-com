@@ -1,22 +1,19 @@
 <template>
   <v-container>
-    <!-- <v-main class="d-flex align-center flex-column"> -->
-      <!-- <pre>
-      {{ sortBlogs }}
-      </pre> -->
-      <h1>Fellow Travelers' Advisory Blog (Archive)</h1>
-      <v-card
-        max-width="900"
-        class="pa-1 ma-3"
-        light
-        v-for="blog in sortBlogs"
-        :key="blog.title"
-        :to="blog.path"
-      >
-        <v-card-title>{{ blog.date }}</v-card-title>
-        <v-card-text v-html="blog.title"></v-card-text>
-        <!-- <nuxt-link :to="blog.path">{{ blog.title }}</nuxt-link> -->
-      </v-card>
+    <h2>Back to <nuxt-link to="/blog"> Blog </nuxt-link></h2>
+    <h1>Fellow Travelers' Advisory Blog (Archive)</h1>
+    <v-card
+      max-width="900"
+      class="pa-1 ma-3"
+      light
+      v-for="blog in sortBlogs"
+      :key="blog.title"
+      :to="blog.path"
+    >
+      <v-card-title>{{ blog.date }}</v-card-title>
+      <v-card-text v-html="blog.title"></v-card-text>
+      <!-- <nuxt-link :to="blog.path">{{ blog.title }}</nuxt-link> -->
+    </v-card>
     <!-- </v-main> -->
   </v-container>
 </template>
