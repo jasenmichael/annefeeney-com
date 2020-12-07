@@ -1,0 +1,64 @@
+<template>
+  <div class="pa-0 ma-0">
+    <v-card light class="pa-8" rounded="0">
+      <h1 v-html="blog.title"></h1>
+      <div v-html="blog.body"></div>
+      <pre>{{ blog }}</pre>
+    </v-card>
+  </div>
+</template>
+
+
+<script>
+import getMeta from '~/utils/getMeta.js'
+export default {
+  middleware({ redirect, route }) {
+    route.path == '/home' && redirect('/')
+  },
+  async asyncData({ $content, params }) {
+    const blog = await $content(`blog/${params.slug}`)
+      // .only(["slug", "title", "path"])
+      .fetch()
+      .catch((err) => {
+        return Error({ statusCode: 404, message: 'Page not found' })
+      })
+    return {
+      blog,
+      params,
+    }
+  },
+  computed: {
+    canonicalUrl() {
+      return (
+        ((this.$config.ngrok && this.$config.ngrok.url) ||
+          this.$config.baseUrl) + this.$route.fullPath
+      )
+    },
+    meta() {
+      const metaData = {
+        type: 'website', // use article for blogs and articless
+        title: this.$config.siteData.name + ' - Blog',
+        description: this.$config.siteData.description + ' - Blog Page',
+        url: this.canonicalUrl,
+        mainImage:
+          ((this.$config.ngrok && this.$config.ngrok.url) ||
+            this.$config.baseUrl) + '/img/og-share.png',
+      }
+      return getMeta(metaData)
+    },
+  },
+  head() {
+    return {
+      title: this.$config.siteData.name + ' - Blog',
+      meta: this.meta,
+      link: [
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: this.canonicalUrl,
+        },
+      ],
+    }
+  },
+}
+</script>
