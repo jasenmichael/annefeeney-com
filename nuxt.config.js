@@ -5,7 +5,7 @@ const url = process.env.NODE_ENV != "production" ? `http://localhost:${port}` : 
 const title = siteData.name || process.env.npm_package_name.replace(/-/g, " ").replace(/(^\w{1})|(\s+\w{1})/g, l => l.toUpperCase())
 const description = siteData.description || process.env.npm_package_description
 const twitterHandle = '@' + siteData.networks.filter(network => network.name == "Twitter")[0].handle || ''
-const defaultShareImage = url + "/img/og-share.png"
+const defaultShareImage = url + "/background.jpg"
 
 import colors from 'vuetify/es5/util/colors'
 export default {
