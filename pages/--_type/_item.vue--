@@ -1,0 +1,68 @@
+<template>
+  <div>
+    <span>
+      back to..
+      <nuxt-link :to="`/${params.type}`">{{ params.type }}</nuxt-link>
+    </span>
+    <pre>params: {{ params }}</pre>
+    <pre>query: {{ query }}</pre>
+    <pre>{{ post ? 'post' : 'posts' }}: {{ post || posts }}</pre>
+  </div>
+</template>
+
+
+<script>
+export default {
+  data() {
+    return {
+      query: this.$route.query,
+    }
+  },
+  async asyncData({ $content, params, error }) {
+    // since we are getting out params.type from "pages/_type" folder,
+    // we need to get the tumblr type from our params.type and use the type tumblr uses
+    // essentially we are making an alias /type to the tumblr type 
+    const types = {
+      photos: 'photo',
+      blog: 'regular',
+      videos: 'video',
+      articles: 'link',
+      audio: 'audio',
+      // "chat" ||
+      // "quote" ||
+    }
+    // if params.type not in types return null to trigger error page
+    const type = types[params.type] || null
+
+    //get single item /type/itemSlug
+    if (params.item && type) {
+      const post = await $content('tumblr', params.item)
+        .where({ type })
+        .fetch()
+        .catch((err) => {
+          error({ statusCode: 404, message: 'Post not found' })
+        })
+      const posts = null
+      return { params, post, posts }
+    }
+
+    // get all type /type
+    if (type && !params.item) {
+      const posts = await $content('tumblr')
+        // .only(["type"])
+        .where({ type })
+        .fetch()
+        .catch((err) => {
+          error({ statusCode: 404, message: 'Post not found' })
+        })
+      const post = null
+      return { params, posts, post }
+    }
+
+    // error if not a type or itemSlug empty(does'nt exist)
+    if (!type || post.length) {
+      error({ statusCode: 404, message: 'Post not found' })
+    }
+  },
+}
+</script>

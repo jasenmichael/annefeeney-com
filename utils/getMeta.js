@@ -6,7 +6,7 @@ export default (meta) => {
   const url = meta.url || siteData.url;
   const title = siteData.title;
   const description = siteData.description;
-  const mainImage = url + "/img/background.jpg"
+  const mainImage = url + "/background.jpg"
   const twitterSite = '@' + siteData.networks.filter(network => network.name == "Twitter")[0].handle
   const twitterCard = "summary_large_image"
   return [{

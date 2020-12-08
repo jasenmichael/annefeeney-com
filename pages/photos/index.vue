@@ -1,7 +1,8 @@
 <template>
   <div>
-    <!-- <pre v-if="posts">posts {{ posts }}</pre> -->
-
+    <!-- <pre v-if="posts">posts {{ posts.posts }}</pre> -->
+    <!-- <pre>{{photos.length}}</pre>
+    <pre>{{ photos }}</pre> -->
     <!-- images from old-- -->
     <div id="images">
       <no-ssr>
@@ -55,9 +56,12 @@ export default {
     }
   },
   async asyncData({ $content }) {
-    const posts = await $content().where({ slug: 'tumblr' }).fetch()
-    const photos = posts.filter((post) => post.type === 'photo').sort( () => .5 - Math.random() )
-    return { photos, posts }
+    const photos = await $content("tumblr")
+    // .only(["type"])
+    .where({type: "photo"})
+    .fetch()
+    // const photos = posts.filter((post) => post.type === 'photo')
+    return { photos }
   },
   mounted() {
     this.$redrawVueMasonry()

@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- <pre>{{params}}</pre> -->
     <h2>Back to <nuxt-link to="/photos"> Photos </nuxt-link></h2>
     <v-img
       contain
@@ -22,7 +23,7 @@
 export default {
   async asyncData({ $content, params }) {
     const photo =
-      (await $content()
+      (await $content("tumblr")
         .where({ type: 'photo', id: params.photo })
         .fetch()
         .then((photo) => photo[0])) || {}

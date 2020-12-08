@@ -63,7 +63,7 @@ export default {
         url: this.canonicalUrl,
         mainImage:
           ((this.$config.ngrok && this.$config.ngrok.url) ||
-            this.$config.baseUrl) + '/img/background.jpg',
+            this.$config.baseUrl) + '/background.jpg',
       }
       return getMeta(metaData)
     },

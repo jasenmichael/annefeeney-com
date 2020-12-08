@@ -4,7 +4,7 @@ const fs = require('fs');
 // takes tumblr handle, returns deserialized posts
 const getJson = async (handle) => {
   const axios = require('axios')
-  return axios.get(`https://${handle}.tumblr.com/api/read/json`, {
+  return axios.get(`https://${handle}.tumblr.com/api/read/json?num=50`, {
       method: 'GET',
       redirect: 'follow',
       mode: "no-cors",
@@ -29,10 +29,11 @@ const getType = async (posts, type) => {
 const deserializePosts = (posts) => {
   return Promise.all(posts.map(async post => {
     return {
-      // slug: "tumblr",
       id: post.id,
       date: post.date,
       type: post.type,
+      titleSlug: post.slug || post.id,
+      slug: post.slug || post.id,
       unixtime: post['unix-timestamp'] || null,
       // likebtn: post['like-button'] || null,
       caption: post['photo-caption'] && post['photo-caption'].replace(/(<([^>]+)>)/gi, "") || null,
