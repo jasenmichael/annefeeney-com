@@ -11,6 +11,7 @@
             fab
             :href="link.url"
             rel="noreferrer"
+            :aria-label="link.name"
             target="_blank"
           >
             <v-icon dark> {{ link.icon }} </v-icon>
@@ -42,7 +43,7 @@ export default {
     getSocialLinks() {
       this.socialLinks = this.$config.siteData.networks.map((network) => {
         return {
-          url: network.name === "Email" ? 'mailto:' + network.url : network.url,
+          url: network.name === 'Email' ? 'mailto:' + network.url : network.url,
           icon: this.icon(network.name),
           // color: 'blue',
           name: network.name,
