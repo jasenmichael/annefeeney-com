@@ -153,3 +153,13 @@ export default {
   },
 }
 </script>
+
+
+<style >
+.nuxt-content {
+  background-color: white;
+}
+.nuxt-content p {
+  color: black;
+}
+</style>

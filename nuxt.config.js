@@ -46,6 +46,12 @@ export default {
       }
     ]
   },
+  fontLoader: {
+    url: 'https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap',
+
+    prefetch: true,
+    preconnect: true
+  },
   css: [],
   plugins: [{
     src: '~/plugins/vue-masonry',
@@ -55,6 +61,7 @@ export default {
   buildModules: [
     '@nuxtjs/vuetify',
     'nuxt-purgecss',
+    'nuxt-font-loader',
     // '@nuxtjs/ngrok',
     // 'nuxt-twa-module',
   ],

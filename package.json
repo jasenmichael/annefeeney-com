@@ -24,6 +24,7 @@
   },
   "devDependencies": {
     "@nuxtjs/vuetify": "^1.11.2",
+    "nuxt-font-loader": "^1.1.2",
     "nuxt-purgecss": "^1.0.0"
   }
 }

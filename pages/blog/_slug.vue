@@ -5,7 +5,7 @@
     <v-card light class="pa-8 ma-3">
       <h1 v-html="blog.title"></h1>
       <div v-html="body"></div>
-      <pre>{{blog}}</pre>
+      <pre>{{ blog }}</pre>
     </v-card>
   </v-container>
 </template>
@@ -27,7 +27,7 @@ export default {
     const body = blog.body
       // add on error display.none for broken images
       .replace(/<img/g, `<img onerror=\"this.style.display=\'none\'\"`)
-      .replace(/http:/g, "https:")
+      .replace(/http:/g, 'https:')
     return {
       blog,
       params,
