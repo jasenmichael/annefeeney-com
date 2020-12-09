@@ -4,8 +4,7 @@
 
     <v-card light class="pa-8 ma-3">
       <h1 v-html="blog.title"></h1>
-      <div v-html="blog.body"></div>
-      <!-- <pre>{{ blog.body }}</pre> -->
+      <div v-html="body"></div>
     </v-card>
   </v-container>
 </template>
@@ -24,9 +23,14 @@ export default {
       .catch((err) => {
         return Error({ statusCode: 404, message: 'Page not found' })
       })
+    const body = blog.body
+      // add on error display.none for broken images
+      .replace(/<img/g, `<img onerror=\"this.style.display=\'none\'\"`)
+      .replace(/http:/g, "https:")
     return {
       blog,
       params,
+      body,
     }
   },
   computed: {
