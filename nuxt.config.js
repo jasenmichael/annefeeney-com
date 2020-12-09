@@ -47,8 +47,7 @@ export default {
     ]
   },
   fontLoader: {
-    url: 'https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap',
-
+    url: 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap',
     prefetch: true,
     preconnect: true
   },
@@ -61,7 +60,7 @@ export default {
   buildModules: [
     '@nuxtjs/vuetify',
     'nuxt-purgecss',
-    'nuxt-font-loader',
+    'nuxt-font-loader'
     // '@nuxtjs/ngrok',
     // 'nuxt-twa-module',
   ],
