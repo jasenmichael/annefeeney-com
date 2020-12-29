@@ -5,7 +5,7 @@
     <v-card light class="pa-8 ma-3">
       <h1 v-html="blog.title"></h1>
       <div v-html="body"></div>
-      <pre>{{ blog }}</pre>
+      <!-- <pre>{{ blog }}</pre> -->
     </v-card>
   </v-container>
 </template>
