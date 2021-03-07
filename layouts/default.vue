@@ -162,7 +162,7 @@ export default {
     this.onResize();
   },
   async fetch() {
-    const hit = await fetch("http://esits.org/hit.php").then((res) => res.json());
+    const hit = await fetch("https://esits.org/hit.php").then((res) => res.json());
     console.log(hit);
   },
   fetchOnServer: false,
