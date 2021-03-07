@@ -1,6 +1,6 @@
 <template>
-  <v-container width="100%" app fluid>
-    <v-parallax
+  <v-container width="100%" class="w-full" app fluid>
+    <img
       dark
       v-resize="onResize"
       :src="
@@ -9,10 +9,11 @@
           : require('~/assets/background-sm.jpg')
       "
       :height="windowSize.y - 25"
-      widh="100vw"
-    >
-      <v-overlay z-index="-20"></v-overlay>
-      <v-row z-index="999" align="center" justify="center">
+      width="100vw"
+      class="object-contain w-full bg-gray-900 opacity-60 relative"
+    />
+      <!-- <v-overlay z-index="-20"></v-overlay> -->
+      <v-row z-index="999" align="center" justify="center" class="">
         <v-col cols="12" class="text-center">
           <h1 class="display-4 font-weight-thin mb-2">
             {{ page.title || $config.siteData.name }}
@@ -43,7 +44,7 @@
             </v-row>
           </v-col> -->
       </v-row>
-    </v-parallax>
+    <!-- </img> -->
     <v-row z-index="999" align="center" justify="center">
       <!-- <v-col class="mt-auto" cols="12"> -->
       <v-col class="mt-auto d-flex align-center flex-column" cols="12">

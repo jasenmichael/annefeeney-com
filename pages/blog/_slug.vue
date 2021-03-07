@@ -1,11 +1,12 @@
 <template>
   <v-container>
     <h2 class="mb-6">Back to <nuxt-link to="/blog"> Blog </nuxt-link></h2>
-
+    <!-- <pre>{{ blogImages }}</pre> -->
+    <!-- <img v-for="(img, i) in blogImages" :key="i" :src="img" alt=""> -->
     <v-card light class="pa-8 ma-3">
       <h1 v-html="blog.title"></h1>
       <div v-html="body"></div>
-      <pre>{{ blog }}</pre>
+      <!-- <pre>{{ blog }}</pre> -->
     </v-card>
   </v-container>
 </template>
@@ -28,10 +29,21 @@ export default {
       // add on error display.none for broken images
       .replace(/<img/g, `<img onerror=\"this.style.display=\'none\'\"`)
       .replace(/http:/g, 'https:')
+    // const imgRex = /<img.*?src="(.*?)"[^>]+>/g
+    // const imgRex = /<img.*?src='(.*?)'/g
+    // const blogImage = imgRex.exec(blog.body)
+    const blogImages = [...new Set(blog.body.split(" ").filter(line => line.includes("jpg")).map(line => {
+      return JSON.parse(line.replace(/href=/g, '').replace(/src=/g, ""))
+    }))]
+    
+    // .map(line => {
+    //   return line.split(" ")
+    // })
     return {
       blog,
       params,
       body,
+      blogImages,
     }
   },
   computed: {

@@ -89,7 +89,8 @@ const downloadImage = async (url, path) => {
       responseType: "stream"
     }).then(res => {
       res.data.pipe(fs.createWriteStream(path))
-    })
+    }).catch(error => console.log('error', error))
+
   }
   const localPath = path.replace("static", "")
   return localPath

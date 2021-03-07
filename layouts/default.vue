@@ -77,7 +77,7 @@
     <v-main>
       <v-container fluid>
         <!-- <pre>{{ social }}</pre> -->
-        <nuxt />
+        <nuxt keep-alive />
       </v-container>
     </v-main>
 
@@ -146,9 +146,10 @@ export default {
     social() {
       return this.$config.siteData.networks.map((network) => {
         return {
-          name: network.name, 
+          name: network.name,
           alt: '@' + network.handle,
-          href: network.name === "Email" ? 'mailto:' + network.url : network.url,
+          href:
+            network.name === 'Email' ? 'mailto:' + network.url : network.url,
           icon: this.icon(network.name),
         }
       })

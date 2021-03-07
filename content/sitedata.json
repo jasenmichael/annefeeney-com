@@ -2,7 +2,8 @@
   "name": "Anne Feeney",
   "description": "Folksinger, Songwriter, Unionmaid, and Hellraiser!",
   "lang": "en-US",
-  "networks": [{
+  "networks": [
+    {
       "name": "Facebook",
       "url": "https://www.facebook.com/Anne-Feeney-110256589190/",
       "handle": "annefeeney",
@@ -29,18 +30,11 @@
   ],
   "favicon": "/favicon.ico",
   "tags": [
-    "nuxt",
-    "vue",
-    "netlify",
-    "boilerplate",
-    "netlifycms",
-    "netlifyidentity",
-    "nuxtcontent",
-    "flat-file",
-    "seo",
-    "og-tags",
-    "twitter-tags",
-    "seo-share"
+    "annefeeney",
+    "unionmaid",
+    "folksinger",
+    "songwriter",
+    "singer"
   ],
   "email": "anne@annefeeney.com"
 }
