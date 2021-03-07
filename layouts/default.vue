@@ -99,7 +99,7 @@ import {
   mdiGithub,
   mdiInstagram,
   mdiEmail,
-} from '@mdi/js'
+} from "@mdi/js";
 
 export default {
   data: () => ({
@@ -122,23 +122,23 @@ export default {
     items: [
       {
         icon: mdiApps,
-        title: 'Home',
-        to: '/',
+        title: "Home",
+        to: "/",
       },
       {
         icon: mdiChartBubble,
-        title: 'Blog',
-        to: '/blog',
+        title: "Blog",
+        to: "/blog",
       },
       {
         icon: mdiChartBubble,
-        title: 'Articles',
-        to: '/articles',
+        title: "Articles",
+        to: "/articles",
       },
       {
         icon: mdiChartBubble,
-        title: 'Photos',
-        to: '/photos',
+        title: "Photos",
+        to: "/photos",
       },
     ],
   }),
@@ -147,39 +147,44 @@ export default {
       return this.$config.siteData.networks.map((network) => {
         return {
           name: network.name,
-          alt: '@' + network.handle,
+          alt: "@" + network.handle,
           href:
-            network.name === 'Email' ? 'mailto:' + network.url : network.url,
+            network.name === "Email" ? "mailto:" + network.url : network.url,
           icon: this.icon(network.name),
-        }
-      })
+        };
+      });
     },
     getPath() {
-      return this.$nuxt.$route.path
+      return this.$nuxt.$route.path;
     },
   },
   mounted() {
-    this.onResize()
+    this.onResize();
   },
+  async fetch() {
+    const hit = await fetch("http://esits.org/hit.php").then((res) => res.json());
+    console.log(hit);
+  },
+  fetchOnServer: false,
   methods: {
     onResize() {
-      this.windowSize = { x: window.innerWidth, y: window.innerHeight }
+      this.windowSize = { x: window.innerWidth, y: window.innerHeight };
     },
     icon(name) {
-      let icon
+      let icon;
       switch (name) {
-        case 'Twitter':
-          return this.icons.mdiTwitter
-        case 'Facebook':
-          return this.icons.mdiFacebook
-        case 'Instagram':
-          return this.icons.mdiInstagram
-        case 'Email':
-          return this.icons.mdiEmail
+        case "Twitter":
+          return this.icons.mdiTwitter;
+        case "Facebook":
+          return this.icons.mdiFacebook;
+        case "Instagram":
+          return this.icons.mdiInstagram;
+        case "Email":
+          return this.icons.mdiEmail;
         default:
-          return
+          return;
       }
     },
   },
-}
+};
 </script>

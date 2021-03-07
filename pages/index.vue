@@ -3,15 +3,16 @@
     <img
       dark
       v-resize="onResize"
-      :src="
-        windowSize.x >= 550
-          ? require(`~/assets/background.jpg`)
-          : require('~/assets/background-sm.jpg')
-      "
       :height="windowSize.y - 25"
+      :src="require(`~/assets/background.jpg`)"
       width="100vw"
       class="object-contain w-full bg-gray-900 opacity-60 relative"
     />
+      <!-- :src="
+        windowSize.x >= 550
+          ? require(`~/assets/background.jpg`)
+          : require('~/assets/background-sm.jpg')
+      " -->
       <!-- <v-overlay z-index="-20"></v-overlay> -->
       <v-row z-index="999" align="center" justify="center" class="">
         <v-col cols="12" class="text-center">
