@@ -21,7 +21,7 @@ export default {
     fallback: true
   },
   head: {
-    titleTemplate: `${title} | %s`,
+    // titleTemplate: `${title} | %s`,
     title,
     meta: [{
         charset: 'utf-8'
