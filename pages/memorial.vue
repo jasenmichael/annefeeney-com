@@ -115,13 +115,6 @@ export default {
           name: "description",
           content: "Celebrating the life and legacy of Anne Feeney",
         },
-      ],
-      link: [
-        {
-          hid: "canonical",
-          rel: "canonical",
-          href: "https://annefeeney.com/memorial/",
-        },
         {
           hid: "og:type",
           property: "og:type",
@@ -156,6 +149,13 @@ export default {
           hid: "twitter:card",
           name: "twitter:card",
           content: "summary_large_image",
+        },
+      ],
+      link: [
+        {
+          hid: "canonical",
+          rel: "canonical",
+          href: "https://annefeeney.com/memorial/",
         },
       ],
     };
