@@ -52,7 +52,7 @@
           </p>
           <div class="text-lg bold text-center">
             <!-- <p>Anne Feeney Presente.</p> -->
-            <p>“Don’t Mourn Organize.”</p>
+            <p>“Don’t Mourn, Organize.”</p>
           </div>
         </div>
         <div class="grid grid-cols-2 gap-3 max-w-lg mx-auto">
