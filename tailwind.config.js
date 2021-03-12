@@ -25,6 +25,7 @@ module.exports = {
   },
   variants: {
     extend: {
+      textColor: ['visited'],
       // animation: ['hover', 'focus'],
       // zIndex: ['hover', 'active'],
       // ringWidth: ['hover', 'active'],

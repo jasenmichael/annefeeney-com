@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="text-center rounded p-2 max-w-4xl mx-auto">
+    <div class="rounded p-2 max-w-4xl mx-auto">
       <img
         src="/img/636795182553137152.jpg"
         alt=""
@@ -13,33 +13,70 @@
         >
           Celebrating the life and legacy of Anne Feeney
         </h1>
-        <p class="italic max-w-lg text-lg mx-auto mt-2">
+        <p class="italic max-w-xl text-xl mx-auto mt-2">
           Virtual memorial and music event April 3, 2021 at 3pm EST / 12pm PST
           followed by a participatory “reception” with breakout rooms for
           sharing memories and song.
         </p>
-        <button class="p-2 bg-gray-700 hover:bg-gray-600 rounded-md">
-          CLICK HERE TO REGISTER
-        </button>
+        <div class="flex text-white">
+          <a
+            class="text-white visited:text-white p-2 bg-gray-700 mx-auto hover:bg-gray-600 rounded-md"
+            style="color: white"
+            rel="noreferrer"
+            target="_blank"
+          >
+            Yes, I would like to attend.
+          </a>
+        </div>
         <div class="mt-8 text-lg">
-          <span class="font-black text-xl">Logistical information: </span>
+          <!-- <span class="font-black text-xl">Logistical information: </span>
           the event will be held on Zoom, you will receive a link when you
           register. Do not share that link. Tell others to come to this site to
           register. Expect a 90 minute program with music and remembrances from
           Anne’s family, friends, and collaborators. After the program,
           participants will have the option to join themed breakout rooms for
-          sharing memories, songs, and celebrating Anne together.
+          sharing memories, songs, and celebrating Anne together. -->
+          <p>
+            Out of respect to the precautions we are all taking to help ease the
+            current health crisis.This celebration will be held virtually on
+            Zoom, We look forward to a time when we can celebrate the life of
+            this American hero in person. When you register to attend this
+            celebration, you will receive a link. (Please, do not share that
+            link, but feel free to invite others to also visit this site to
+            register). You will enjoy this 90 minute honoring with powerful
+            music and fond remembrances from Anne’s family, friends, and
+            collaborators. After the observance, participants are invited to
+            join us in smaller rooms catered to the many facets that are Anne
+            Feeney. We very much invite you to contribute your memories, songs,
+            and photographs as we celebrate the life of our comrade.
+          </p>
+          <div class="text-lg bold text-center">
+            <!-- <p>Anne Feeney Presente.</p> -->
+            <p>“Don’t Mourn Organize.”</p>
+          </div>
         </div>
         <div class="grid grid-cols-2 gap-3 max-w-lg mx-auto">
           <button
             class="block mt-8 p-2 bg-gray-700 hover:bg-gray-600 rounded-md"
           >
-            DONATE HERE
+            <a
+              href="https://www.laborheritage.org/donation-2/"
+              rel="noreferrer"
+              style="color: white"
+              target="_blank"
+            >
+              DONATIONS WELCOME
+            </a>
           </button>
           <button
             class="block mt-8 p-2 bg-gray-700 hover:bg-gray-600 rounded-md"
           >
-            <a href="https://www.kudoboard.com/boards/tgYWiNh9/kudos/create">
+            <a
+              href="https://www.kudoboard.com/boards/tgYWiNh9/"
+              rel="noreferrer"
+              style="color: white"
+              target="_blank"
+            >
               SHARE STORIES PHOTOS VIDEOS
             </a>
           </button>
@@ -96,6 +133,7 @@
         <a
           target="_blank"
           href="https://www.kudoboard.com/boards/tgYWiNh9/kudos/create"
+          style="color: white"
         >
           Add to Board (opens in a new window)
         </a>
