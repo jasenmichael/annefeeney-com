@@ -45,8 +45,13 @@ export default {
         hid: 'canonical',
         rel: 'canonical',
         href: url
+      },
+      {
+        href: "https://actionnetwork.org/css/style-embed-v3.css",
+        rel: "stylesheet",
+        type: "text/css",
       }
-    ]
+    ],
   },
   fontLoader: {
     url: 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap',

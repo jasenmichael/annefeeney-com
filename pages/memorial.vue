@@ -195,11 +195,11 @@ export default {
           rel: "canonical",
           href: "https://annefeeney.com/memorial/",
         },
-        {
-          href: "https://actionnetwork.org/css/style-embed-v3.css",
-          rel: "stylesheet",
-          type: "text/css",
-        },
+        // {
+        //   href: "https://actionnetwork.org/css/style-embed-v3.css",
+        //   rel: "stylesheet",
+        //   type: "text/css",
+        // },
       ],
     };
   },

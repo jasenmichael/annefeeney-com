@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "dev": "npm run tumblrCache && nuxt",
-    "build": "npm run tumblrCache && nuxt build",
+    "oldbuild": "npm run tumblrCache && nuxt build",
+    "build": "nuxt build",
     "start": "nuxt start",
     "generate": "npm run tumblrCache && nuxt generate",
     "tumblrCache": "node -e \"require('./plugins/tumblr').cacheTumblrDownloadImages('annefeeney')\"",
