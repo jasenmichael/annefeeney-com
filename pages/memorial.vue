@@ -18,17 +18,6 @@
           followed by a participatory “reception” with breakout rooms for
           sharing memories and song.
         </p>
-        <div class="flex text-white">
-          <a
-            class="text-white visited:text-white p-2 bg-gray-700 mx-auto hover:bg-gray-600 rounded-md"
-            style="color: white"
-            rel="noreferrer"
-            href="https://actionnetwork.org/events/anne-feeney-memorial"
-            target="_blank"
-          >
-            Register here to attend.
-          </a>
-        </div>
         <div class="mt-8 text-lg">
           <!-- <span class="font-black text-xl">Logistical information: </span>
           the event will be held on Zoom, you will receive a link when you
@@ -56,6 +45,9 @@
             <p>“Don’t Mourn, Organize.”</p>
           </div>
         </div>
+
+        <div id="can-event-area-anne-feeney-memorial" style="width: 100%"></div>
+
         <div class="grid grid-cols-2 gap-3 max-w-lg mx-auto">
           <button
             class="block mt-8 p-2 bg-gray-700 hover:bg-gray-600 rounded-md"
@@ -147,6 +139,13 @@
 export default {
   head() {
     return {
+      script: [
+        {
+          src:
+            "https://actionnetwork.org/widgets/v3/event/anne-feeney-memorial?format=js&source=widget",
+          defer: true,
+        },
+      ],
       title: "Anne Feeney Memorial",
       meta: [
         {
@@ -196,8 +195,112 @@ export default {
           rel: "canonical",
           href: "https://annefeeney.com/memorial/",
         },
+        {
+          href: "https://actionnetwork.org/css/style-embed-v3.css",
+          rel: "stylesheet",
+          type: "text/css",
+        },
       ],
     };
   },
 };
 </script>
+
+
+<style>
+/* Change the form background color, text color, and typeface */
+.can_embed #can_embed_form,
+.can_embed #donate_auto_modal {
+  background-color: #121212 !important;
+  color: white !important;
+
+  /* font-family; */
+}
+
+/* Change link color */
+.can_embed #can_embed_form a,
+.can_embed #donate_auto_modal a {
+  color: rgba(55, 65, 81, var(--tw-bg-opacity)) !important;
+}
+
+/* Heading colors */
+.can_embed #can_embed_form h2,
+.can_embed #donate_auto_modal h2 {
+  color: #121212 !important;
+}
+
+.can_embed #can_embed_form h1,
+.can_embed #donate_auto_modal h2,
+.can_embed #can_embed_form h3,
+.can_embed #donate_auto_modal h3,
+.can_embed #can_embed_form h4,
+.can_embed #donate_auto_modal h4,
+.can_embed #can_embed_form h5,
+.can_embed #donate_auto_modal h5,
+.can_embed #can_embed_form h6,
+.can_embed #donate_auto_modal h6 {
+  color: white !important;
+}
+
+/* Welcome message background color */
+.can_embed
+  #can_embed_form
+  #action_welcome_message
+  #action_welcome_message_inner,
+.can_embed
+  #donate_auto_modal
+  #action_welcome_message
+  #action_welcome_message_inner {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+  /* This is black @ 10% opacity */
+}
+
+/* Remove the Action Network Logo */
+.can_embed #logo_wrap {
+  display: none !important;
+}
+
+/* Button Background Color */
+.can_embed .can_button,
+.can_embed #can_embed_form input[type="submit"],
+.can_embed #can_embed_form .button,
+.can_embed #donate_auto_modal input[type="submit"],
+.can_embed #donate_auto_modal .button {
+  background-color: #4b5563 !important;
+}
+
+/* Button Background Color on Hover */
+.can_embed .can_button:hover,
+.can_embed #can_embed_form input[type="submit"]:hover,
+.can_embed #can_embed_form .button:hover,
+.can_embed #donate_auto_modal input[type="submit"]:hover,
+.can_embed #donate_auto_modal .button:hover {
+  background-color: #4b5563 !important;
+}
+
+/* Thank You Page Header Background Color */
+.can_embed #can_embed_form #can_thank_you,
+.can_embed #donate_auto_modal #can_thank_you {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Thank You Page Header Text Color */
+.can_embed #can_embed_form #can_thank_you,
+.can_embed #donate_auto_modal #can_thank_you,
+.can_embed #can_embed_form #can_thank_you h1,
+.can_embed #donate_auto_modal #can_thank_you h1,
+.can_embed #can_embed_form #can_thank_you h4,
+.can_embed #donate_auto_modal #can_thank_you h4,
+.can_embed #can_embed_form #can_thank_you #action_info .action_info_user,
+.can_embed #donate_auto_modal #can_thank_you #action_info .action_info_user,
+.can_embed #can_embed_form #can_thank_you #action_info .action_info_user a,
+.can_embed #donate_auto_modal #can_thank_you #action_info .action_info_user a {
+  color: white !important;
+}
+
+/* Thank You Page Divider Line */
+.can_embed #can_embed_form #can_thank_you #action_info,
+.can_embed #donate_auto_modal #can_thank_you #action_info {
+  border-color: black !important;
+}
+</style>
