@@ -23,9 +23,10 @@
             class="text-white visited:text-white p-2 bg-gray-700 mx-auto hover:bg-gray-600 rounded-md"
             style="color: white"
             rel="noreferrer"
+            href="https://actionnetwork.org/events/anne-feeney-memorial"
             target="_blank"
           >
-            Yes, I would like to attend.
+            Register here to attend.
           </a>
         </div>
         <div class="mt-8 text-lg">
