@@ -26,8 +26,8 @@
           Anne’s family, friends, and collaborators. After the program,
           participants will have the option to join themed breakout rooms for
           sharing memories, songs, and celebrating Anne together. -->
-          <p>
-            Out of respect to the precautions we are all taking to help ease the
+          <p class="text-lg">
+             Out of respect to the precautions we are all taking to help ease the
             current health crisis.This celebration will be held virtually on
             Zoom, We look forward to a time when we can celebrate the life of
             this American hero in person. When you register to attend this
@@ -42,11 +42,11 @@
           </p>
           <div class="text-lg bold text-center">
             <!-- <p>Anne Feeney Presente.</p> -->
-            <p>“Don’t Mourn, Organize.”</p>
+            <h3 class="font-black text-2xl pb-4">“Don’t Mourn, Organize.”</h3>
           </div>
         </div>
 
-        <div id="can-event-area-anne-feeney-memorial" style="width: 100%"></div>
+        <div class="rounded" id="can-event-area-anne-feeney-memorial" style="width: 100%"></div>
 
         <div class="grid grid-cols-2 gap-3 max-w-lg mx-auto">
           <button
@@ -75,7 +75,7 @@
           </button>
         </div>
 
-        <p class="mt-8 text-2xl text-gray-100">
+        <p class="mt-8 text-2xl font-bold text-gray-100 text-center">
           In lieu of flowers, please consider a donation to the Anne Feeney
           Hellraiser Fund, managed by the Labor Heritage Foundation
         </p>
