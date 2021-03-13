@@ -53,7 +53,7 @@ export default {
     prefetch: true,
     preconnect: true
   },
-  css: ['assets/style.css'],
+  css: ['@/assets/style.css'],
   plugins: [{
     src: '~/plugins/vue-masonry',
     ssr: false
