@@ -1,31 +1,36 @@
 <template>
-  <v-container width="100%" class="w-full" app fluid>
-    <img
-      dark
-      v-resize="onResize"
-      :height="windowSize.y - 25"
-      :src="require(`~/assets/background.jpg`)"
-      width="100vw"
-      class="object-contain w-full bg-gray-900 opacity-60 relative"
-    />
-      <!-- :src="
+  <div class="max-w-5xl mx-auto">
+    <!-- :height="windowSize.y - 250" -->
+    <!-- width="100vw" -->
+    <!-- dark -->
+    <!-- v-resize="onResize" -->
+    <div class="h-2/3 md:h-1/2 flex mx-auto">
+      <img
+        :src="require(`~/assets/background.jpg`)"
+        class="object-contain mx-auto bg-gray-900 opacity-60"
+      />
+    </div>
+
+    <!-- :src="
         windowSize.x >= 550
           ? require(`~/assets/background.jpg`)
           : require('~/assets/background-sm.jpg')
       " -->
-      <!-- <v-overlay z-index="-20"></v-overlay> -->
-      <v-row z-index="999" align="center" justify="center" class="">
-        <v-col cols="12" class="text-center">
-          <h1 class="display-4 font-weight-thin mb-2">
-            {{ page.title || $config.siteData.name }}
-          </h1>
-          <h2 class="subheading font-weight-light">
-            {{ page.description || $config.siteData.description }}
-          </h2>
+    <!-- <v-overlay z-index="-20"></v-overlay> -->
+    <v-row z-index="999" align="center" justify="center">
+      <v-col cols="12" class="text-center">
+        <h1 class="text-7xl font-weight-thin mb-2">
+          {{ page.title || $config.siteData.name }}
+        </h1>
+        <h2 class="subheading font-weight-light">
+          {{ page.description || $config.siteData.description }}
+        </h2>
+        <div class="hidden md:block">
           <HomeNavigation />
-        </v-col>
+        </div>
+      </v-col>
 
-        <!-- <v-col class="text-center mt-auto d-flex align-center flex-column">
+      <!-- <v-col class="text-center mt-auto d-flex align-center flex-column">
             <v-row class="pt-10">
               <v-col class="text-start" cols="12">
                 <div class="text-center">
@@ -44,8 +49,9 @@
               </v-col>
             </v-row>
           </v-col> -->
-      </v-row>
+    </v-row>
     <!-- </img> -->
+
     <v-row z-index="999" align="center" justify="center">
       <!-- <v-col class="mt-auto" cols="12"> -->
       <v-col class="mt-auto d-flex align-center flex-column" cols="12">
@@ -57,13 +63,13 @@
       </v-col>
       <ContactLinks />
     </v-row>
-  </v-container>
+  </div>
 </template>
 
 
 <script>
-import getMeta from '~/utils/getMeta.js'
-import { mdiMail, mdiTwitter, mdiFacebook, mdiInstagram } from '@mdi/js'
+import getMeta from "~/utils/getMeta.js";
+import { mdiMail, mdiTwitter, mdiFacebook, mdiInstagram } from "@mdi/js";
 
 export default {
   // layout: 'home',
@@ -81,12 +87,12 @@ export default {
     },
   }),
   beforeMount() {
-    this.onResize()
-    this.getSocialLinks()
+    this.onResize();
+    this.getSocialLinks();
   },
   methods: {
     onResize() {
-      this.windowSize = { x: window.innerWidth, y: window.innerHeight }
+      this.windowSize = { x: window.innerWidth, y: window.innerHeight };
     },
     getSocialLinks() {
       this.socialLinks = this.$config.siteData.networks.map((network) => {
@@ -95,49 +101,49 @@ export default {
           icon: this.icon(network.name),
           // color: 'blue',
           name: network.name,
-        }
-      })
+        };
+      });
     },
     icon(name) {
-      let icon
+      let icon;
       switch (name) {
-        case 'Twitter':
-          return this.icons.mdiTwitter
-        case 'Facebook':
-          return this.icons.mdiFacebook
-        case 'Instagram':
-          return this.icons.mdiInstagram
-        case 'Email':
-          return this.icons.mdiMail
+        case "Twitter":
+          return this.icons.mdiTwitter;
+        case "Facebook":
+          return this.icons.mdiFacebook;
+        case "Instagram":
+          return this.icons.mdiInstagram;
+        case "Email":
+          return this.icons.mdiMail;
         default:
-          return
+          return;
       }
     },
   },
   async asyncData({ $content }) {
-    const page = await $content('pages/home').fetch()
+    const page = await $content("pages/home").fetch();
     return {
       page,
-    }
+    };
   },
   computed: {
     canonicalUrl() {
       return (
         ((this.$config.ngrok && this.$config.ngrok.url) ||
           this.$config.baseUrl) + this.$route.fullPath
-      )
+      );
     },
     meta() {
       const metaData = {
-        type: 'website', // use article for blogs and such
+        type: "website", // use article for blogs and such
         title: this.$config.siteData.name,
         description: this.$config.siteData.description,
         url: this.canonicalUrl,
         mainImage:
           ((this.$config.ngrok && this.$config.ngrok.url) ||
-            this.$config.baseUrl) + (this.page.cover || '/background.jpg'),
-      }
-      return getMeta(metaData, this.$config.siteData, this.canonicalUrl)
+            this.$config.baseUrl) + (this.page.cover || "/background.jpg"),
+      };
+      return getMeta(metaData, this.$config.siteData, this.canonicalUrl);
     },
   },
   head() {
@@ -146,14 +152,14 @@ export default {
       meta: this.meta,
       link: [
         {
-          hid: 'canonical',
-          rel: 'canonical',
+          hid: "canonical",
+          rel: "canonical",
           href: this.canonicalUrl,
         },
       ],
-    }
+    };
   },
-}
+};
 </script>
 
 
