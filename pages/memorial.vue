@@ -9,15 +9,15 @@
       />
       <div>
         <h1
-          class="mt-4 font-black text-3xl md:text-4xl lg:text-5xl md:max-w-md lg:max-w-lg mx-auto"
+          class="pt-4 font-black text-3xl md:text-4xl lg:text-5xl md:max-w-md lg:max-w-lg mx-auto"
         >
           Celebrating the life and legacy of Anne Feeney
         </h1>
-        <p>
+        <p class="text-center mx-auto mt-4">
           We look forward to celebrating the Life of Anne Feeney with you and
           including your important part of it in this virtual celebration.
         </p>
-        <p class="italic max-w-xl text-xl mx-auto mt-2">
+        <p class="italic max-w-2xl text-xl mx-auto mt-2">
           Virtual memorial and music event April 3, 2021 at 3pm EST / 12pm PST
           followed by a participatory “reception” with breakout rooms for
           sharing memories and song.
