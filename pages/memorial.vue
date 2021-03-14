@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div class="rounded p-2 max-w-4xl mx-auto">
+  <div class="mx-auto max-w-5xl">
+    <div class="rounded p-2 max-w-5xl mx-auto">
       <img
         src="/img/636795182553137152.jpg"
         alt=""
@@ -13,6 +13,9 @@
         >
           Celebrating the life and legacy of Anne Feeney
         </h1>
+        <p>
+           We look forward to celebrating the Life of Anne Feeney with you and including your important part of it in this virtual celebration.
+        </p>
         <p class="italic max-w-xl text-xl mx-auto mt-2">
           Virtual memorial and music event April 3, 2021 at 3pm EST / 12pm PST
           followed by a participatory “reception” with breakout rooms for
@@ -107,14 +110,14 @@
         </p>
       </div>
     </div>
-    <div>
+    <div class="w-full">
       <iframe
         src="https://www.kudoboard.com/boards/tgYWiNh9/slideshow?embed=true&videos=true&speed=medium&title=false"
         height="800px"
         width="100%"
         style="border: none"
         allowfullscreen
-        class="rounded-md mx-auto"
+        class="rounded-md mx-auto "
         sandbox="allow-scripts allow-same-origin"
       ></iframe>
       <div class="text-center mx-auto mt-6">
