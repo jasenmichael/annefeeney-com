@@ -190,7 +190,9 @@ export default {
       /^data-aos-.*/,
       /^(red|grey)--text$/,
       /^text--darken-[1-4]$/,
-      /^text--lighten-[1-4]$/
+      /^text--lighten-[1-4]$/,
+      /^donate_*/,
+      /^slideshow-container*/,
     ],
     whitelistPatternsChildren: [
       /^post-content/,
@@ -198,7 +200,8 @@ export default {
       /^swiper-.*/,
       /^pswp.*/,
       /^v-text-field.*/,
-      /^v-progress-linear/
+      /^v-progress-linear/,
+      /^can_embed*/,
     ]
   },
   build: {

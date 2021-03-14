@@ -14,7 +14,8 @@
           Celebrating the life and legacy of Anne Feeney
         </h1>
         <p>
-           We look forward to celebrating the Life of Anne Feeney with you and including your important part of it in this virtual celebration.
+          We look forward to celebrating the Life of Anne Feeney with you and
+          including your important part of it in this virtual celebration.
         </p>
         <p class="italic max-w-xl text-xl mx-auto mt-2">
           Virtual memorial and music event April 3, 2021 at 3pm EST / 12pm PST
@@ -30,7 +31,7 @@
           participants will have the option to join themed breakout rooms for
           sharing memories, songs, and celebrating Anne together. -->
           <p class="text-lg">
-             Out of respect to the precautions we are all taking to help ease the
+            Out of respect to the precautions we are all taking to help ease the
             current health crisis.This celebration will be held virtually on
             Zoom, We look forward to a time when we can celebrate the life of
             this American hero in person. When you register to attend this
@@ -49,7 +50,11 @@
           </div>
         </div>
 
-        <div class="rounded" id="can-event-area-anne-feeney-memorial" style="width: 100%"></div>
+        <div
+          class="rounded"
+          id="can-event-area-anne-feeney-memorial"
+          style="width: 100%"
+        ></div>
 
         <div class="grid grid-cols-2 gap-3 max-w-lg mx-auto">
           <button
@@ -115,10 +120,10 @@
         src="https://www.kudoboard.com/boards/tgYWiNh9/slideshow?embed=true&videos=true&speed=medium&title=false"
         height="800px"
         width="100%"
-        style="border: none"
         allowfullscreen
-        class="rounded-md mx-auto "
+        class="rounded-md mx-auto"
         sandbox="allow-scripts allow-same-origin"
+        style="background-color: #121212 !important; border: none"
       ></iframe>
       <div class="text-center mx-auto mt-6">
         Share your stories, photos, and video of Anne Feeney on the Kudoboard
@@ -208,3 +213,104 @@ export default {
   },
 };
 </script>
+
+<style>
+iframe, .slideshow-container, .kb-template-761 {
+  background-color: #121212 !important;
+}
+
+.can_embed #can_embed_form,
+.can_embed #donate_auto_modal {
+  background-color: #121212 !important;
+  color: white !important;
+
+  /* font-family; */
+}
+
+/* Change link color */
+.can_embed #can_embed_form a,
+.can_embed #donate_auto_modal a {
+  color: rgba(55, 65, 81, var(--tw-bg-opacity)) !important;
+}
+
+/* Heading colors */
+.can_embed #can_embed_form h2,
+.can_embed #donate_auto_modal h2 {
+  color: #121212 !important;
+}
+
+.can_embed #can_embed_form h1,
+.can_embed #donate_auto_modal h2,
+.can_embed #can_embed_form h3,
+.can_embed #donate_auto_modal h3,
+.can_embed #can_embed_form h4,
+.can_embed #donate_auto_modal h4,
+.can_embed #can_embed_form h5,
+.can_embed #donate_auto_modal h5,
+.can_embed #can_embed_form h6,
+.can_embed #donate_auto_modal h6 {
+  color: white !important;
+}
+
+/* Welcome message background color */
+.can_embed
+  #can_embed_form
+  #action_welcome_message
+  #action_welcome_message_inner,
+.can_embed
+  #donate_auto_modal
+  #action_welcome_message
+  #action_welcome_message_inner {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+  /* This is black @ 10% opacity */
+}
+
+/* Remove the Action Network Logo */
+.can_embed #logo_wrap {
+  display: none !important;
+}
+
+/* Button Background Color */
+.can_embed .can_button,
+.can_embed #can_embed_form input[type="submit"],
+.can_embed #can_embed_form .button,
+.can_embed #donate_auto_modal input[type="submit"],
+.can_embed #donate_auto_modal .button {
+  background-color: #4b5563 !important;
+}
+
+/* Button Background Color on Hover */
+.can_embed .can_button:hover,
+.can_embed #can_embed_form input[type="submit"]:hover,
+.can_embed #can_embed_form .button:hover,
+.can_embed #donate_auto_modal input[type="submit"]:hover,
+.can_embed #donate_auto_modal .button:hover {
+  background-color: #4b5563 !important;
+}
+
+/* Thank You Page Header Background Color */
+.can_embed #can_embed_form #can_thank_you,
+.can_embed #donate_auto_modal #can_thank_you {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Thank You Page Header Text Color */
+.can_embed #can_embed_form #can_thank_you,
+.can_embed #donate_auto_modal #can_thank_you,
+.can_embed #can_embed_form #can_thank_you h1,
+.can_embed #donate_auto_modal #can_thank_you h1,
+.can_embed #can_embed_form #can_thank_you h4,
+.can_embed #donate_auto_modal #can_thank_you h4,
+.can_embed #can_embed_form #can_thank_you #action_info .action_info_user,
+.can_embed #donate_auto_modal #can_thank_you #action_info .action_info_user,
+.can_embed #can_embed_form #can_thank_you #action_info .action_info_user a,
+.can_embed #donate_auto_modal #can_thank_you #action_info .action_info_user a {
+  color: white !important;
+}
+
+/* Thank You Page Divider Line */
+.can_embed #can_embed_form #can_thank_you #action_info,
+.can_embed #donate_auto_modal #can_thank_you #action_info {
+  border-color: black !important;
+}
+</style>

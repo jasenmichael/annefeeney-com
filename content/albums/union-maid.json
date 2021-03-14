@@ -1,10 +1,123 @@
 {
   "title": "Union Maid",
   "year": "2003",
+  "amazon_url": "https://www.amazon.com/Union-Maid-Anne-Feeney/dp/B0012P92M4/ref=tmm_msc_swatch_0?_encoding=UTF8&qid=1615739291&sr=1-1",
+  "cover_art": "",
   "tracks": [
     {
       "title": "War On Workers",
-      "time": "3:39"
+      "time": "3:39",
+      "track": "01"
+    },
+    {
+      "title": "Are You Now or Have You Ever Been?",
+      "time": "4:09",
+      "track": "02"
+    },
+    {
+      "title": "Whatever Happened to the 8 Hour Day?",
+      "time": "3:03",
+      "track": "03"
+    },
+    {
+      "title": "We Just Come to Work Here",
+      "time": "2:51",
+      "track": "04"
+    },
+    {
+      "title": "National Health Care Now!",
+      "time": "2:26",
+      "track": "05"
+    },
+    {
+      "title": "We Do the Work",
+      "time": "3:59",
+      "track": "06"
+    },
+    {
+      "title": "Scabs",
+      "time": "3:17",
+      "track": "07"
+    },
+    {
+      "title": "Union Maid",
+      "time": "3:30",
+      "track": "08"
+    },
+    {
+      "title": "Bread and Rose",
+      "time": "3:29",
+      "track": "09"
+    },
+    {
+      "title": "Solidarity Forever",
+      "time": "3:50",
+      "track": "10"
+    },
+    {
+      "title": "School Days End",
+      "time": "2:47",
+      "track": "11"
+    },
+    {
+      "title": "Your Nursing Heart",
+      "time": "3:23",
+      "track": "12"
+    },
+    {
+      "title": "I'm Gonna Be An Engineer",
+      "time": "5:29",
+      "track": "13"
+    },
+    {
+      "title": "Do-Re-Mi",
+      "time": "3:37",
+      "track": "14"
+    },
+    {
+      "title": "",
+      "time": "",
+      "track": "15"
+    },
+    {
+      "title": "",
+      "time": "",
+      "track": "16"
+    },
+    {
+      "title": "",
+      "time": "",
+      "track": "17"
+    },
+    {
+      "title": "",
+      "time": "",
+      "track": "18"
+    },
+    {
+      "title": "",
+      "time": "",
+      "track": "19"
+    },
+    {
+      "title": "",
+      "time": "",
+      "track": "20"
+    },
+    {
+      "title": "",
+      "time": "",
+      "track": "21"
+    },
+    {
+      "title": "",
+      "time": "",
+      "track": "22"
+    },
+    {
+      "title": "",
+      "time": "",
+      "track": "23"
     }
   ]
 }
