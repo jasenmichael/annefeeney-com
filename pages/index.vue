@@ -38,11 +38,10 @@
     <!-- <v-overlay z-index="-20"></v-overlay> -->
     <v-row z-index="999" align="center" justify="center">
       <v-col cols="12" class="text-center">
-        <h1 class="text-7xl font-weight-thin mb-2">
-          Anne Feeney
-        </h1>
+        <h1 class="text-7xl font-weight-thin mb-2">Anne Feeney</h1>
         <h2 class="subheading font-weight-light">
-          {{ page.description || $config.siteData.description }}
+          Folksinger, Songwriter, Unionmaid, and Hellraiser!
+          <!-- {{ page.description || $config.siteData.description }} -->
         </h2>
         <div class="hidden md:block">
           <HomeNavigation />
