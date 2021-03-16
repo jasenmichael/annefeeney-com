@@ -18,7 +18,9 @@
       <button
         class="px-4 mr-auto font-bold rounded bg-gray-800 hover:bg-gray-700 mt-2"
       >
-        <nuxt-link to="/memorial" class="visited:text-gray-300"> more info here </nuxt-link>
+        <nuxt-link to="/memorial" class="visited:text-gray-300">
+          more info here
+        </nuxt-link>
       </button>
     </div>
     <div class="h-3/4 flex mx-auto">
@@ -71,10 +73,13 @@
 
     <v-row z-index="999" align="center" justify="center">
       <!-- <v-col class="mt-auto" cols="12"> -->
-      <v-col class="mt-auto d-flex align-center flex-column" cols="12" >
+      <v-col class="mt-auto d-flex align-center flex-column" cols="12">
         <v-row class="md:px-2">
-          <v-card light class="pa-6 mt-4 " style="font-size: 1.3rem" >
-            <nuxt-content class="text-gray-900 rounded-none md:rounded" :document="page" />
+          <v-card light class="pa-6 mt-4" style="font-size: 1.3rem">
+            <nuxt-content
+              class="text-gray-900 rounded-none md:rounded"
+              :document="page"
+            />
           </v-card>
         </v-row>
       </v-col>
@@ -165,7 +170,9 @@ export default {
   },
   head() {
     return {
-      title: this.page.description || this.$config.siteData.description,
+      title:
+        // this.page.description ||
+        "Rest in Power (July 1, 1951 – February 3, 2021)", //this.$config.siteData.description,
       meta: this.meta,
       link: [
         {
