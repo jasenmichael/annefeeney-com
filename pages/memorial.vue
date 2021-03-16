@@ -150,6 +150,13 @@
 
 <script>
 export default {
+  data: () => {
+    return {
+      title: "Anne Feeney Online Memorial Celebration - April 3, 2021",
+      description:
+        "Celebrating the life and legacy of Anne Feeney (July 1, 1951 – February 3, 2021)",
+    };
+  },
   head() {
     return {
       script: [
@@ -159,12 +166,12 @@ export default {
           defer: true,
         },
       ],
-      title: "Anne Feeney Memorial",
+      title: this.title,
       meta: [
         {
           hid: "description",
           name: "description",
-          content: "Celebrating the life and legacy of Anne Feeney",
+          content: this.description,
         },
         {
           hid: "og:type",
@@ -179,12 +186,12 @@ export default {
         {
           hid: "og:title",
           property: "og:title",
-          content: "Anne Feeney Memorial",
+          content: this.title,
         },
         {
           hid: "og:description",
           property: "og:description",
-          content: "Celebrating the life and legacy of Anne Feeney",
+          content: this.description,
         },
         {
           hid: "twitter:url",
@@ -194,7 +201,7 @@ export default {
         {
           hid: "twitter:description",
           name: "twitter:description",
-          content: "Celebrating the life and legacy of Anne Feeney",
+          content: this.description,
         },
         {
           hid: "twitter:card",
