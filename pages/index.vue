@@ -1,10 +1,27 @@
 <template>
-  <div class="max-w-5xl mx-auto">
+  <div class="max-w-6xl mx-auto">
     <!-- :height="windowSize.y - 250" -->
     <!-- width="100vw" -->
     <!-- dark -->
     <!-- v-resize="onResize" -->
-    <div class="h-2/3 md:h-1/2 flex mx-auto">
+    <h1 class="py-4 text-xl md:text-2xl text-center font-light text-gray-300">
+      Anne Feeney, Rest in Power (July 1, 1951 – February 3, 2021)
+    </h1>
+    <div class="lg:flex text-center items-center mx-auto mb-2">
+      <h2 class="text-center ml-auto text-gray-300 mr-2 lg:mr-0">
+        Join us in
+        <span class="text-2xl">
+          Celebrating the life and legacy of Anne Feeney
+        </span>
+        Memorial April 3, 2021
+      </h2>
+      <button
+        class="px-4 mr-auto font-bold rounded bg-gray-800 hover:bg-gray-700 mt-2"
+      >
+        <nuxt-link to="/memorial" class="visited:text-gray-300"> more info here </nuxt-link>
+      </button>
+    </div>
+    <div class="h-3/4 flex mx-auto">
       <img
         :src="require(`~/assets/background.jpg`)"
         class="object-contain mx-auto bg-gray-900 opacity-60"

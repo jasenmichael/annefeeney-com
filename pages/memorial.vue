@@ -1,6 +1,9 @@
 <template>
   <div class="mx-auto max-w-5xl">
     <div class="rounded p-2 max-w-5xl mx-auto">
+      <h1 class="py-4 text-xl md:text-2xl text-center font-light text-gray-300">
+        Anne Feeney, Rest in Power (July 1, 1951 – February 3, 2021)
+      </h1>
       <img
         src="/img/636795182553137152.jpg"
         alt=""
@@ -17,7 +20,9 @@
           We look forward to celebrating the Life of Anne Feeney with you and
           including your important part of it in this virtual celebration.
         </p>
-        <p class="italic max-w-4xl font-bold text-gray-200 text-xl mx-auto mt-2 md:text-2xl">
+        <p
+          class="italic max-w-4xl font-bold text-gray-200 text-xl mx-auto mt-2 md:text-2xl"
+        >
           Virtual memorial and music event April 3, 2021 at 3pm EST / 12pm PST
           followed by a participatory “reception” with breakout rooms for
           sharing memories and song.
@@ -30,10 +35,10 @@
           Anne’s family, friends, and collaborators. After the program,
           participants will have the option to join themed breakout rooms for
           sharing memories, songs, and celebrating Anne together. -->
-          <p class="text-lg md:text-xl  lg:text-2xl">
-            Out of respect for the precautions we are all taking to help ease the
-            current health crisis, This celebration will be held virtually on
-            Zoom. We look forward to a time when we can celebrate the life of
+          <p class="text-lg md:text-xl lg:text-2xl">
+            Out of respect for the precautions we are all taking to help ease
+            the current health crisis, This celebration will be held virtually
+            on Zoom. We look forward to a time when we can celebrate the life of
             this American hero in person. When you register to attend this
             celebration, you will receive a link. (Please, do not share that
             link, but feel free to invite others to also visit this site to
@@ -41,8 +46,8 @@
             music and fond remembrances from Anne’s family, friends, and
             collaborators. After the observance, participants are invited to
             join us in smaller rooms catered to the many facets that are Anne
-            Feeney. We encourage you to contribute your memories, songs,
-            and photographs as we celebrate the life of our comrade.
+            Feeney. We encourage you to contribute your memories, songs, and
+            photographs as we celebrate the life of our comrade.
           </p>
           <div class="text-lg bold text-center">
             <!-- <p>Anne Feeney Presente.</p> -->
@@ -88,7 +93,7 @@
           Hellraiser Fund, managed by the Labor Heritage Foundation
         </p>
 
-        <p class="text-left text-lg md:text-xl  lg:text-2xl">
+        <p class="text-left text-lg md:text-xl lg:text-2xl">
           Anne Feeney was “the best labor singer in North America,” according to
           Utah Phillips, “a fearless and formidable force,” according to Rage
           Against the Machine guitarist Tom Morello, and “rocked the house”
@@ -215,7 +220,9 @@ export default {
 </script>
 
 <style>
-iframe, .slideshow-container, .kb-template-761 {
+iframe,
+.slideshow-container,
+.kb-template-761 {
   background-color: #121212 !important;
 }
 
