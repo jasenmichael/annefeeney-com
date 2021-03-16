@@ -13,11 +13,11 @@
         >
           Celebrating the life and legacy of Anne Feeney
         </h1>
-        <p class="text-center mx-auto mt-4">
+        <p class="text-center mx-auto mt-4 md:text-2xl">
           We look forward to celebrating the Life of Anne Feeney with you and
           including your important part of it in this virtual celebration.
         </p>
-        <p class="italic max-w-2xl text-xl mx-auto mt-2">
+        <p class="italic max-w-4xl font-bold text-gray-200 text-xl mx-auto mt-2 md:text-2xl">
           Virtual memorial and music event April 3, 2021 at 3pm EST / 12pm PST
           followed by a participatory “reception” with breakout rooms for
           sharing memories and song.
@@ -30,7 +30,7 @@
           Anne’s family, friends, and collaborators. After the program,
           participants will have the option to join themed breakout rooms for
           sharing memories, songs, and celebrating Anne together. -->
-          <p class="text-lg">
+          <p class="text-lg md:text-xl  lg:text-2xl">
             Out of respect for the precautions we are all taking to help ease the
             current health crisis, This celebration will be held virtually on
             Zoom. We look forward to a time when we can celebrate the life of
@@ -88,7 +88,7 @@
           Hellraiser Fund, managed by the Labor Heritage Foundation
         </p>
 
-        <p class="text-left text-lg">
+        <p class="text-left text-lg md:text-xl  lg:text-2xl">
           Anne Feeney was “the best labor singer in North America,” according to
           Utah Phillips, “a fearless and formidable force,” according to Rage
           Against the Machine guitarist Tom Morello, and “rocked the house”
