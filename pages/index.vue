@@ -56,7 +56,7 @@
       <!-- <v-col class="mt-auto" cols="12"> -->
       <v-col class="mt-auto d-flex align-center flex-column" cols="12">
         <v-row>
-          <v-card rounded="0" light class="pa-6 mt-4" style="font-size: 1.3rem">
+          <v-card light class="pa-6 mt-4 rounded" style="font-size: 1.3rem">
             <nuxt-content class="black--text" :document="page" />
           </v-card>
         </v-row>

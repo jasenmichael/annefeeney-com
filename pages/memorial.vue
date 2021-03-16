@@ -31,9 +31,9 @@
           participants will have the option to join themed breakout rooms for
           sharing memories, songs, and celebrating Anne together. -->
           <p class="text-lg">
-            Out of respect to the precautions we are all taking to help ease the
-            current health crisis.This celebration will be held virtually on
-            Zoom, We look forward to a time when we can celebrate the life of
+            Out of respect for the precautions we are all taking to help ease the
+            current health crisis, This celebration will be held virtually on
+            Zoom. We look forward to a time when we can celebrate the life of
             this American hero in person. When you register to attend this
             celebration, you will receive a link. (Please, do not share that
             link, but feel free to invite others to also visit this site to
@@ -41,7 +41,7 @@
             music and fond remembrances from Anne’s family, friends, and
             collaborators. After the observance, participants are invited to
             join us in smaller rooms catered to the many facets that are Anne
-            Feeney. We very much invite you to contribute your memories, songs,
+            Feeney. We encourage you to contribute your memories, songs,
             and photographs as we celebrate the life of our comrade.
           </p>
           <div class="text-lg bold text-center">
