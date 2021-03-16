@@ -172,7 +172,7 @@ export default {
     return {
       title:
         // this.page.description ||
-        "Rest in Power (July 1, 1951 – February 3, 2021)", //this.$config.siteData.description,
+        "Anne Feeney - Rest in Power (July 1, 1951 – February 3, 2021)", //this.$config.siteData.description,
       meta: this.meta,
       link: [
         {
