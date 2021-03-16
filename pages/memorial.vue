@@ -1,7 +1,7 @@
 <template>
   <div class="mx-auto max-w-5xl">
     <div class="rounded p-2 max-w-5xl mx-auto">
-      <h1 class="py-4 text-xl md:text-2xl text-center font-light text-gray-300">
+      <h1 class="pb-4 text-xl md:text-2xl text-center font-light text-gray-300">
         Anne Feeney, Rest in Power (July 1, 1951 – February 3, 2021)
       </h1>
       <img

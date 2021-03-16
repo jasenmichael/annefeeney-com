@@ -71,10 +71,10 @@
 
     <v-row z-index="999" align="center" justify="center">
       <!-- <v-col class="mt-auto" cols="12"> -->
-      <v-col class="mt-auto d-flex align-center flex-column" cols="12">
-        <v-row>
-          <v-card light class="pa-6 mt-4 rounded" style="font-size: 1.3rem">
-            <nuxt-content class="black--text" :document="page" />
+      <v-col class="mt-auto d-flex align-center flex-column" cols="12" >
+        <v-row class="md:px-2">
+          <v-card light class="pa-6 mt-4 " style="font-size: 1.3rem" >
+            <nuxt-content class="text-gray-900 rounded-none md:rounded" :document="page" />
           </v-card>
         </v-row>
       </v-col>
