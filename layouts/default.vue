@@ -70,7 +70,7 @@
         <v-icon>{{ icons.mdiMenu }}</v-icon>
         <!-- </v-avatar> -->
       </v-btn>
-      <v-toolbar-title v-text="$config.siteData.name" />
+      <v-toolbar-title v-text="'Anne Feeney'" />
       <v-spacer />
     </v-app-bar>
 
