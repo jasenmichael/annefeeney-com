@@ -84,7 +84,8 @@ export default {
     gzip: true,
     exclude: [
       // '/secret',
-      '/admin/**'
+      '/admin/**',
+      '/admin'
     ],
     routes: [
       '/',
