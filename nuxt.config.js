@@ -20,6 +20,7 @@ export default {
   generate: {
     fallback: true
   },
+  
   head: {
     // titleTemplate: `${title} | %s`,
     title,
@@ -76,7 +77,23 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
     '@nuxt/content',
+    '@nuxtjs/sitemap',
   ],
+  sitemap: {
+    hostname: 'https://annefeeney.com',
+    gzip: true,
+    exclude: [
+      // '/secret',
+      '/admin/**'
+    ],
+    routes: [
+      '/',
+      '/memorial',
+      '/photos',
+      '/blog',
+      '/articles',
+    ]
+  },
   pwa: {
     meta: {
       /* meta options */

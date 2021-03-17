@@ -20,6 +20,7 @@
     "@nuxtjs/axios": "^5.12.2",
     "@nuxtjs/ngrok": "^2.0.0",
     "@nuxtjs/pwa": "^3.3.2",
+    "@nuxtjs/sitemap": "^2.4.0",
     "core-js": "^3.6.5",
     "load-json-file": "^6.2.0",
     "netlify-plugin-submit-sitemap": "^0.2.3",
