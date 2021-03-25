@@ -189,6 +189,12 @@ export default {
           content: this.title,
         },
         {
+          hid: "og:site_name",
+          property: "og:site_name",
+          name: "og:site_name",
+          content: "Anne Feeney",
+        },
+        {
           hid: "og:description",
           property: "og:description",
           content: this.description,
@@ -211,6 +217,7 @@ export default {
         {
           hid: "og:image",
           property: "og:image",
+          name: "og:image",
           content: "https://annefeeney.com/anne-feeney-memorial.jpeg",
         },
         {
