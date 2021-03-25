@@ -208,6 +208,16 @@ export default {
           name: "twitter:card",
           content: "summary_large_image",
         },
+        {
+          hid: "og:image",
+          property: "og:image",
+          content: "https://annefeeney.com/anne-feeney-memorial.jpeg",
+        },
+        {
+          hid: "twitter:image",
+          name: "twitter:image",
+          content: "https://annefeeney.com/anne-feeney-memorial.jpeg",
+        },
       ],
       link: [
         {
