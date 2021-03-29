@@ -218,12 +218,12 @@ export default {
           hid: "og:image",
           property: "og:image",
           name: "og:image",
-          content: "https://annefeeney.com/anne-feeney-memorial.jpeg",
+          content: "https://annefeeney.com/anne-feeney-memorial2.jpeg",
         },
         {
           hid: "twitter:image",
           name: "twitter:image",
-          content: "https://annefeeney.com/anne-feeney-memorial.jpeg",
+          content: "https://annefeeney.com/anne-feeney-memorial2.jpeg",
         },
       ],
       link: [
