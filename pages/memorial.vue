@@ -1,33 +1,52 @@
 <template>
   <div class="mx-auto max-w-5xl">
-    <div class="rounded p-2 max-w-5xl mx-auto">
-      <h1 class="pb-4 text-xl md:text-2xl text-center font-light text-gray-300">
-        Anne Feeney, Rest in Power (July 1, 1951 – February 3, 2021)
-      </h1>
-      <img
+    <main class="rounded p-2 max-w-5xl mx-auto">
+      <header>
+        <p
+          class="text-xl md:text-2xl text-center font-light"
+          style="color: #b73e23"
+        >
+          Anne Feeney, Rest in Power (July 1, 1951 – February 3, 2021)
+        </p>
+        <h1
+          class="pt-2 font-black text-3xl md:text-4xl lg:text-5xl text-center"
+        >
+          Celebrating the life and legacy of Anne Feeney
+        </h1>
+        <div
+          class="italic max-w-4xl font-bold text-center text-gray-200 text-xl mx-auto mt-2 md:text-2xl"
+        >
+          <h3>
+            Virtual memorial and music event April 3, 2021 at 3pm EST / 12pm PST
+            followed by a participatory “reception” with breakout rooms for
+            sharing memories and song.
+          </h3>
+          <br />
+        </div>
+      </header>
+      <figure class="stream rounded-md my-2">
+        <iframe
+          src="https://www.youtube.com/embed/e5M_OMggtwE?autoplay=1"
+          title="Anne Feeney Memorial Live Stream"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <figcaption>Anne Feeney Memorial Live Stream</figcaption>
+      </figure>
+      <!-- <img
         src="/img/636795182553137152.jpg"
         alt=""
         class="mx-auto"
         style="max-height: 50vh"
-      />
-      <div>
-        <h1
-          class="pt-4 font-black text-3xl md:text-4xl lg:text-5xl md:max-w-md lg:max-w-lg mx-auto"
-        >
-          Celebrating the life and legacy of Anne Feeney
-        </h1>
+      /> -->
+      <section>
         <p class="text-center mx-auto mt-4 md:text-2xl">
           We look forward to celebrating the Life of Anne Feeney with you and
           including your important part of it in this virtual celebration.
         </p>
-        <p
-          class="italic max-w-4xl font-bold text-gray-200 text-xl mx-auto mt-2 md:text-2xl"
-        >
-          Virtual memorial and music event April 3, 2021 at 3pm EST / 12pm PST
-          followed by a participatory “reception” with breakout rooms for
-          sharing memories and song.
-        </p>
-        <div class="mt-8 text-lg">
+
+        <aside class="mt-8 text-lg">
           <!-- <span class="font-black text-xl">Logistical information: </span>
           the event will be held on Zoom, you will receive a link when you
           register. Do not share that link. Tell others to come to this site to
@@ -53,7 +72,7 @@
             <!-- <p>Anne Feeney Presente.</p> -->
             <h3 class="font-black text-2xl pb-4">“Don’t Mourn, Organize.”</h3>
           </div>
-        </div>
+        </aside>
 
         <div
           class="rounded"
@@ -118,9 +137,9 @@
           of your work and the project you need funding for, as well as a link
           to your work, to annefeeneymemorial@gmail.com
         </p>
-      </div>
-    </div>
-    <div class="w-full">
+      </section>
+    </main>
+    <section class="w-full">
       <iframe
         src="https://www.kudoboard.com/boards/tgYWiNh9/slideshow?embed=true&videos=true&speed=medium&title=false"
         height="800px"
@@ -144,7 +163,7 @@
           Add to Board (opens in a new window)
         </a>
       </button>
-    </div>
+    </section>
   </div>
 </template>
 
@@ -244,6 +263,26 @@ export default {
 </script>
 
 <style>
+.stream {
+  position: relative;
+  height: 0;
+  padding-top: 46.6%;
+  overflow: hidden;
+  max-width: 100%;
+}
+.stream iframe,
+.stream object,
+.stream embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.stream .fluid-vids {
+  position: initial !important;
+}
+
 iframe,
 .slideshow-container,
 .kb-template-761 {
